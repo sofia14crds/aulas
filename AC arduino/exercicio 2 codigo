@@ -1,0 +1,20 @@
+// C++ code
+//
+const int ledVer = 3;
+const int ledAzul = 2;
+
+void setup()
+{
+  pinMode(ledVer, OUTPUT);
+  pinMode(ledAzul, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(ledVer, HIGH);
+  digitalWrite(ledAzul, LOW);
+  delay(1000);
+  digitalWrite(ledAzul, HIGH);
+  digitalWrite(ledVer, LOW);
+  delay(1000);
+}
